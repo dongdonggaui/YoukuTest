@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0605692117BE0B51009E7600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605692017BE0B51009E7600 /* Foundation.framework */; };
+		0605692317BE0B51009E7600 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605692217BE0B51009E7600 /* CoreGraphics.framework */; };
+		0605692517BE0B51009E7600 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605692417BE0B51009E7600 /* UIKit.framework */; };
+		0605692B17BE0B51009E7600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0605692917BE0B51009E7600 /* InfoPlist.strings */; };
+		0605692D17BE0B51009E7600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0605692C17BE0B51009E7600 /* main.m */; };
+		0605693117BE0B51009E7600 /* HLYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0605693017BE0B51009E7600 /* HLYAppDelegate.m */; };
+		0605693417BE0B51009E7600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0605693217BE0B51009E7600 /* Main.storyboard */; };
+		0605693717BE0B51009E7600 /* HLYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0605693617BE0B51009E7600 /* HLYViewController.m */; };
+		0605693917BE0B52009E7600 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0605693817BE0B52009E7600 /* Images.xcassets */; };
+		0605694017BE0B52009E7600 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605693F17BE0B52009E7600 /* XCTest.framework */; };
+		0605694117BE0B52009E7600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605692017BE0B51009E7600 /* Foundation.framework */; };
+		0605694217BE0B52009E7600 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0605692417BE0B51009E7600 /* UIKit.framework */; };
+		0605694A17BE0B52009E7600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0605694817BE0B52009E7600 /* InfoPlist.strings */; };
+		0605694C17BE0B52009E7600 /* YoukuTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0605694B17BE0B52009E7600 /* YoukuTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0605694317BE0B52009E7600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0605691517BE0B51009E7600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0605691C17BE0B51009E7600;
+			remoteInfo = YoukuTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0605691D17BE0B51009E7600 /* YoukuTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoukuTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0605692017BE0B51009E7600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0605692217BE0B51009E7600 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0605692417BE0B51009E7600 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0605692817BE0B51009E7600 /* YoukuTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoukuTest-Info.plist"; sourceTree = "<group>"; };
+		0605692A17BE0B51009E7600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0605692C17BE0B51009E7600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0605692E17BE0B51009E7600 /* YoukuTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YoukuTest-Prefix.pch"; sourceTree = "<group>"; };
+		0605692F17BE0B51009E7600 /* HLYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYAppDelegate.h; sourceTree = "<group>"; };
+		0605693017BE0B51009E7600 /* HLYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYAppDelegate.m; sourceTree = "<group>"; };
+		0605693317BE0B51009E7600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0605693517BE0B51009E7600 /* HLYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYViewController.h; sourceTree = "<group>"; };
+		0605693617BE0B51009E7600 /* HLYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYViewController.m; sourceTree = "<group>"; };
+		0605693817BE0B52009E7600 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0605693E17BE0B52009E7600 /* YoukuTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoukuTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0605693F17BE0B52009E7600 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0605694717BE0B52009E7600 /* YoukuTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoukuTestTests-Info.plist"; sourceTree = "<group>"; };
+		0605694917BE0B52009E7600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0605694B17BE0B52009E7600 /* YoukuTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoukuTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0605691A17BE0B51009E7600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605692317BE0B51009E7600 /* CoreGraphics.framework in Frameworks */,
+				0605692517BE0B51009E7600 /* UIKit.framework in Frameworks */,
+				0605692117BE0B51009E7600 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0605693B17BE0B52009E7600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605694017BE0B52009E7600 /* XCTest.framework in Frameworks */,
+				0605694217BE0B52009E7600 /* UIKit.framework in Frameworks */,
+				0605694117BE0B52009E7600 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0605691417BE0B51009E7600 = {
+			isa = PBXGroup;
+			children = (
+				0605692617BE0B51009E7600 /* YoukuTest */,
+				0605694517BE0B52009E7600 /* YoukuTestTests */,
+				0605691F17BE0B51009E7600 /* Frameworks */,
+				0605691E17BE0B51009E7600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0605691E17BE0B51009E7600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0605691D17BE0B51009E7600 /* YoukuTest.app */,
+				0605693E17BE0B52009E7600 /* YoukuTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0605691F17BE0B51009E7600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0605692017BE0B51009E7600 /* Foundation.framework */,
+				0605692217BE0B51009E7600 /* CoreGraphics.framework */,
+				0605692417BE0B51009E7600 /* UIKit.framework */,
+				0605693F17BE0B52009E7600 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0605692617BE0B51009E7600 /* YoukuTest */ = {
+			isa = PBXGroup;
+			children = (
+				0605692F17BE0B51009E7600 /* HLYAppDelegate.h */,
+				0605693017BE0B51009E7600 /* HLYAppDelegate.m */,
+				0605693217BE0B51009E7600 /* Main.storyboard */,
+				0605693517BE0B51009E7600 /* HLYViewController.h */,
+				0605693617BE0B51009E7600 /* HLYViewController.m */,
+				0605693817BE0B52009E7600 /* Images.xcassets */,
+				0605692717BE0B51009E7600 /* Supporting Files */,
+			);
+			path = YoukuTest;
+			sourceTree = "<group>";
+		};
+		0605692717BE0B51009E7600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0605692817BE0B51009E7600 /* YoukuTest-Info.plist */,
+				0605692917BE0B51009E7600 /* InfoPlist.strings */,
+				0605692C17BE0B51009E7600 /* main.m */,
+				0605692E17BE0B51009E7600 /* YoukuTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0605694517BE0B52009E7600 /* YoukuTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0605694B17BE0B52009E7600 /* YoukuTestTests.m */,
+				0605694617BE0B52009E7600 /* Supporting Files */,
+			);
+			path = YoukuTestTests;
+			sourceTree = "<group>";
+		};
+		0605694617BE0B52009E7600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0605694717BE0B52009E7600 /* YoukuTestTests-Info.plist */,
+				0605694817BE0B52009E7600 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0605691C17BE0B51009E7600 /* YoukuTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0605694F17BE0B52009E7600 /* Build configuration list for PBXNativeTarget "YoukuTest" */;
+			buildPhases = (
+				0605691917BE0B51009E7600 /* Sources */,
+				0605691A17BE0B51009E7600 /* Frameworks */,
+				0605691B17BE0B51009E7600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoukuTest;
+			productName = YoukuTest;
+			productReference = 0605691D17BE0B51009E7600 /* YoukuTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0605693D17BE0B52009E7600 /* YoukuTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0605695217BE0B52009E7600 /* Build configuration list for PBXNativeTarget "YoukuTestTests" */;
+			buildPhases = (
+				0605693A17BE0B52009E7600 /* Sources */,
+				0605693B17BE0B52009E7600 /* Frameworks */,
+				0605693C17BE0B52009E7600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0605694417BE0B52009E7600 /* PBXTargetDependency */,
+			);
+			name = YoukuTestTests;
+			productName = YoukuTestTests;
+			productReference = 0605693E17BE0B52009E7600 /* YoukuTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0605691517BE0B51009E7600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HLY;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "黄露洋";
+				TargetAttributes = {
+					0605693D17BE0B52009E7600 = {
+						TestTargetID = 0605691C17BE0B51009E7600;
+					};
+				};
+			};
+			buildConfigurationList = 0605691817BE0B51009E7600 /* Build configuration list for PBXProject "YoukuTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0605691417BE0B51009E7600;
+			productRefGroup = 0605691E17BE0B51009E7600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0605691C17BE0B51009E7600 /* YoukuTest */,
+				0605693D17BE0B52009E7600 /* YoukuTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0605691B17BE0B51009E7600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605693917BE0B52009E7600 /* Images.xcassets in Resources */,
+				0605692B17BE0B51009E7600 /* InfoPlist.strings in Resources */,
+				0605693417BE0B51009E7600 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0605693C17BE0B52009E7600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605694A17BE0B52009E7600 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0605691917BE0B51009E7600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605693717BE0B51009E7600 /* HLYViewController.m in Sources */,
+				0605693117BE0B51009E7600 /* HLYAppDelegate.m in Sources */,
+				0605692D17BE0B51009E7600 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0605693A17BE0B52009E7600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605694C17BE0B52009E7600 /* YoukuTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0605694417BE0B52009E7600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0605691C17BE0B51009E7600 /* YoukuTest */;
+			targetProxy = 0605694317BE0B52009E7600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0605692917BE0B51009E7600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0605692A17BE0B51009E7600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0605693217BE0B51009E7600 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0605693317BE0B51009E7600 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0605694817BE0B52009E7600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0605694917BE0B52009E7600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0605694D17BE0B52009E7600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0605694E17BE0B52009E7600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0605695017BE0B52009E7600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoukuTest/YoukuTest-Prefix.pch";
+				INFOPLIST_FILE = "YoukuTest/YoukuTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0605695117BE0B52009E7600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoukuTest/YoukuTest-Prefix.pch";
+				INFOPLIST_FILE = "YoukuTest/YoukuTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0605695317BE0B52009E7600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YoukuTest.app/YoukuTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoukuTest/YoukuTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YoukuTestTests/YoukuTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0605695417BE0B52009E7600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YoukuTest.app/YoukuTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoukuTest/YoukuTest-Prefix.pch";
+				INFOPLIST_FILE = "YoukuTestTests/YoukuTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0605691817BE0B51009E7600 /* Build configuration list for PBXProject "YoukuTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0605694D17BE0B52009E7600 /* Debug */,
+				0605694E17BE0B52009E7600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0605694F17BE0B52009E7600 /* Build configuration list for PBXNativeTarget "YoukuTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0605695017BE0B52009E7600 /* Debug */,
+				0605695117BE0B52009E7600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0605695217BE0B52009E7600 /* Build configuration list for PBXNativeTarget "YoukuTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0605695317BE0B52009E7600 /* Debug */,
+				0605695417BE0B52009E7600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0605691517BE0B51009E7600 /* Project object */;
+}
