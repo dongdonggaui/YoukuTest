@@ -1,5 +1,5 @@
 //
-//  HLYViewController.h
+//  HLYAuthViewController.h
 //  YoukuTest
 //
 //  Created by 黄露洋 on 13-8-16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLYViewController : UIViewController
-
-@property (nonatomic, strong) id passValue;
+@interface HLYAuthViewController : UIViewController
 
 @end
