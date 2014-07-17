@@ -101,35 +101,42 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (self.datas) {
-        return self.datas.count;
+        return self.datas.count == 0 ? 1 : self.datas.count;
     }
     return 0;
 }
 
+- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.datas.count == 0) {
+        return 40;
+    }
+    
+    return 221;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = kCellIdentifierTVSearchResult;
-    HLYSearchTVResultCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    HLYSearchTVResultCell *cell;
     
     // Configure the cell...
-    NSDictionary *dic = [self.datas objectAtIndex:indexPath.row];
-    [cell configureCellWithProperties:dic];
+    if (self.datas.count == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierTVSearchResultNull forIndexPath:indexPath];
+        cell.textLabel.text = NSLocalizedString(@"No search result", nil);
+        cell.userInteractionEnabled = NO;
+        cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierTVSearchResult forIndexPath:indexPath];
+        NSDictionary *dic = [self.datas objectAtIndex:indexPath.row];
+        [cell configureCellWithProperties:dic];
+    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    [self performSegueWithIdentifier:kSegueShowVideoPlayer sender:nil];
-    
-    NSDictionary *dic = [self.datas objectAtIndex:indexPath.row];
-    [HLYVideoListBL getTVInfoByTVID:[dic objectForKey:@"id"] onSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        id json = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-        DLog(@"json = %@", json);
-        
-    } onFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        DLog(@"error : %@", error.userInfo);
-    }];
+    [self performSegueWithIdentifier:kSegueShowTVInfo sender:nil];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -154,9 +161,9 @@
 
 #pragma mark - segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:kSegueShowVideoPlayer]) {
+    if ([segue.identifier isEqualToString:kSegueShowTVInfo]) {
         HLYViewController *vc = (HLYViewController *)[segue destinationViewController];
-        vc.passValue = [self.datas objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        vc.passValue = [[self.datas objectAtIndex:self.tableView.indexPathForSelectedRow.row] objectForKey:@"id"];
     }
 }
 

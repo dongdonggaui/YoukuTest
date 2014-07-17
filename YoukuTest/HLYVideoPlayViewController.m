@@ -33,9 +33,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     double timeStamp = [[NSDate date] timeIntervalSince1970];
-    NSString *toBeMD5 = [NSString stringWithFormat:@"%@_%lf_%@", [self.passValue objectForKey:@"id"], timeStamp, kYoukuAppScrect];
+    NSString *videoId = [self.passValue isKindOfClass:[NSString class]] ? self.passValue : [self.passValue objectForKey:@"id"];
+    NSString *toBeMD5 = [NSString stringWithFormat:@"%@_%lf_%@", videoId, timeStamp, kYoukuAppScrect];
     NSString *embsig = [NSString stringWithFormat:@"%@_%lf_%@", @"1", timeStamp, [self md5:toBeMD5]];
-    NSString *html = [NSString stringWithFormat:@"<div id=\"youkuplayer\"></div><script type=\"text/javascript\" src=\"http://player.youku.com/jsapi\">player = new YKU.Player('youkuplayer',{client_id: '%@',vid: '%@',autoplay: false,embsig: '%@',show_related: false,width: 300,height: 200,events:{onPlayerReady: function(){ /*your code*/ },onPlayStart: function(){ /*your code*/ },onPlayEnd: function(){ /*your code*/ }}});</script>", kYoukuAppKey, [self.passValue objectForKey:@"id"], embsig];
+    NSString *html = [NSString stringWithFormat:@"<div id=\"youkuplayer\"></div><script type=\"text/javascript\" src=\"http://player.youku.com/jsapi\">player = new YKU.Player('youkuplayer',{client_id: '%@',vid: '%@',autoplay: false,embsig: '%@',show_related: false,width: 300,height: 200,events:{onPlayerReady: function(){ /*your code*/ },onPlayStart: function(){ /*your code*/ },onPlayEnd: function(){ /*your code*/ }}});</script>", kYoukuAppKey, videoId, embsig];
     [self.webView loadHTMLString:html baseURL:nil];
 }
 

@@ -100,7 +100,8 @@
     AFHTTPClient *client = [AFHTTPClient clientWithBaseURL:url];
     NSDictionary *properties = @{@"progammeId": tvid,
                                  @"client_id": kYoukuAppKey,
-                                 @"type": @"1"};
+                                 @"type": @"1",
+                                 @"source_site": @"14"};
     
     [client getPath:kApiYoukuTVInfoPath parameters:properties success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (success) {

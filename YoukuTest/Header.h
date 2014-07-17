@@ -58,6 +58,8 @@
 #define kCellIdentifierSearchResult @"kCellIdentifierSearchResult"
 #define kCellIdentifierTVSearch @"kCellIdentifierTVSearch"
 #define kCellIdentifierTVSearchResult @"kCellIdentifierTVSearchResult"
+#define kCellIdentifierTVInfo @"kCellIdentifierTVInfo"
+#define kCellIdentifierTVSearchResultNull @"kCellIdentifierTVSearchResultNull"
 
 //***************************************************************************************
 // marcros

@@ -88,7 +88,7 @@
             NSRange foundRange = result.range;
             NSString *foundString = [urlString substringWithRange:foundRange];
             NSString *code = [foundString substringFromIndex:5];
-            DLog(@"loc = %d, length = %d, string = %@, code = %@", foundRange.location, foundRange.length, foundString, code);
+            DLog(@"url = %@", urlString);
             
             NSURL *url = [NSURL URLWithString:kApiYoukuBasePath];
             AFHTTPClient *client = [AFHTTPClient clientWithBaseURL:url];
@@ -103,7 +103,8 @@
                 [[NSUserDefaults standardUserDefaults] setObject:json forKey:kOAuthCredential];
                 [[NSUserDefaults standardUserDefaults] synchronize];
 
-                __weak HLYViewController *vc = (HLYViewController *)[self presentingViewController];
+                __weak UINavigationController *nc = (UINavigationController *)[self presentingViewController];
+                __weak HLYViewController *vc = (HLYViewController *)[nc topViewController];
                 [self dismissViewControllerAnimated:YES completion:^{
                     vc.passValue = NSLocalizedString(@"Auth Success", nil);
                 }];
@@ -111,7 +112,8 @@
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 DLog(@"error : %@", error.userInfo);
                 
-                __weak HLYViewController *vc = (HLYViewController *)[self presentingViewController];
+                __weak UINavigationController *nc = (UINavigationController *)[self presentingViewController];
+                __weak HLYViewController *vc = (HLYViewController *)[nc topViewController];
                 [self dismissViewControllerAnimated:YES completion:^{
                     vc.passValue = NSLocalizedString(@"Auth Failed", nil);
                 }];
